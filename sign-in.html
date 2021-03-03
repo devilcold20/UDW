@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Sign In</title>
+<link rel="stylesheet" href="loginensignin.css" />
+<script>
+	var i = 0;
+	var image= [];
+	var time = 2000;
+	
+	image[0] = 'Images/sale-1.png';
+	image[1] = 'Images/sale-2.png';
+	image[2] = 'Images/sale-3.png';
+	function changeImage(){
+	document.slide.src = image[i];
+	if(i< image.length - 1)
+	{i++;}
+	else
+	{i = 0;}
+	setTimeout("changeImage()", time);
+	} 
+	window.onload = changeImage;
+</script>
+</head>
+
+<body>
+<div id="main">
+       	<div id="head">
+        	<a href="login.html" target="_parent"><img src="Images/login.png" width="20px" height="15px" />&#160Đăng nhập</a>
+        	<a href=mailto:hotro@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Hỗ trợ</a>
+			<a href="" target="_parent"><img src="Images/giohang.png" width="20px" height="15px" /> &#160Giỏ hàng</a>
+			<a href="info.html" target="_parent"><img src="Images/gioithieu.png" width="20px" height="15px" /> &#160Giới thiệu</a>
+			<a href="index.html" target="_parent"><img src="Images/home.png" width="20px" height="15px" /> &#160Trang chủ</a>
+			<div id="name"> <a href="index.html">B.O.O.K Store - Best Origin Of Knowledge</a></div>
+  				<form id="sear">
+				  <input type="text" name="search" placeholder="Search...">
+				</form>
+  		</div>
+		  <div id="sale">
+				<a href="sale.html"><img name="slide" width="100%" height="200px"style="margin-top:78px;" ></a>
+			</div>
+</div>
+<div id="nav">
+   			<div id="menu">
+				<ul>
+        		<li><a href="">Kinh tế</a></li>
+            	<li><a href="">Tâm lý</a></li>
+            	<li><a href="">Thường thức</a></li>
+            	<li><a href="">Văn học</a></li>
+            	<li><a href="">Thơ - Truyện</a></li>
+            	<li><a href="">Thể loại sách khác</a>
+					<table id="submenu">
+					<tr>
+					<td><a href="">Sách Ôn Thi THPTQG</a></td>
+					</tr>
+					<tr>
+                	<td><a href="">Sách Giáo Khoa</a></td> 
+					</tr>
+					<tr>
+                	<td><a href="">Sách Ngoại Ngữ</a>
+					</tr>
+				</table>
+					</li>
+				</ul>
+	  	  </div>
+	  </div>
+<div id="content">
+	<form onSubmit="alert('Bạn đã đăng kí thành công!')" style="width:600px; margin:50px auto; height:800px; background-color:#fff; border-radius:10px; padding-top:2px; padding-left:25px; padding-right:25px;">
+    <br><br>
+		<h1 style="text-align: center;">Đăng ký</h1>
+        	<span style="display: inline-block;
+                background: #000;
+                padding: 5px 7px 5px 7px;
+                border-radius: 100%;
+                color: white;
+                font-size: 20px;"> 1 </span>
+			<span style="font-size: 20px; font-weight:bold">Thông tin cá nhân</span>
+				<br><br>
+                	<span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Họ tên</span>
+                <br>
+                	<input style="margin-left:50px; border-radius:8px; padding-left:10px; margin-bottom:4px; margin-top:4px; width:80%;padding-top:10px; padding-bottom:10px;" type="text" name="yourname" placeholder="Your Name" required></input>
+                <br>
+                	<span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Email</span>
+                <br>
+                	<input style="margin-left:50px; border-radius:8px; padding-left:10px; margin-bottom:4px; margin-top:4px; width:80%;padding-top:10px; padding-bottom:10px;" type="email" name="youremail" placeholder="abc@gmail.com" required></input>
+                <br>
+                	<span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Ngày sinh</span>
+                <br>
+                	<input style="margin-left:50px; border-radius:8px; padding-left:10px; margin-bottom:4px; margin-top:4px; width:80%;padding-top:10px; padding-bottom:10px;" type="date" name="txtNgaySinh" required></input>
+                	<span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Giới tính</span>
+                <br>
+    			<input style="margin-left:160px" type="radio" name="gt" value="Male" checked>Nam
+        		<input style="margin-left:70px;" type="radio" name="gt" value="Female">Nữ
+				<br><br>
+                <span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Loại sách bạn yêu thích</span>
+    				<select style="width:55%;" name="qt">
+    					<option value="Truyện">Truyện</option>
+        				<option value="Văn học">Văn học</option>
+        				<option value="Tiểu thuyết">Tiểu thuyết</option>
+    				</select>
+                <br>
+                <span style="font-size: 18px; font-weight: bolder;padding-left: 10px;"></span>
+                <br>
+                <span style="display: inline-block;
+                background: #000;
+                padding: 5px 7px 5px 7px;
+                border-radius: 100%;
+                color: white;
+                font-size: 20px;" > 2 </span>
+                <span style="font-size: 20px; font-weight:bold">Tài khoản</span>
+                <br><br>
+                <span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Tài khoản</span>
+                <br>
+                	<input style="margin-left:50px; border-radius:8px; padding-left:10px; margin-bottom:4px; margin-top:4px; width:80%;padding-top:10px; padding-bottom:10px;" type="text" name="tk" placeholder="account" required></input>
+                <br>
+                <span style="margin:10px; font-size: 18px; font-weight: bolder;padding-left: 10px;">Mật khẩu</span>
+                <br>
+                	<input style="margin-left:50px; border-radius:8px; padding-left:10px; margin-bottom:4px; margin-top:4px; width:80%;padding-top:10px; padding-bottom:10px;" type="password" name="pass" placeholder="password" required></input>
+                <br>
+                    <input style="margin-left:20px;" type="radio" name="dk" value="rules" checked>Tôi đã đọc và đồng ý với <a href="rules.html" target="_blank">điều khoản</a>
+                    <br>
+                    <input style="margin-left:50px;margin-top:15px; width:15%; padding-top:10px; padding-bottom:10px;" type="reset" value="Nhập lại">
+                    <input style="margin-left:310px;margin-top:15px; width:15%; padding-top:10px; padding-bottom:10px;" type="submit" value="Đăng kí" formaction="login.html">
+                    <br><br>
+            <h3 align="center">Bạn đã có tài khoản? <a href="login.html">Đăng nhập ngay!</a></h3>
+	</form>
+</div>
+<div id="footer">
+<span> Bản quyền thuộc :&#160&#160&#160&#160&#160</span>
+
+<a href=mailto:1851010013bao@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Nguyễn Nguyệt Phương Bảo</a>
+
+<a href=mailto:1851010139Trang@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Đoàn Thiên Trang</a>
+</div>
+</body>
+</html>

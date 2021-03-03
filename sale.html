@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BOOK STORE</title>
+<link rel="stylesheet" href="sale.css" />
+<script>
+	var i = 0;
+	var image= [];
+	var time = 2000;
+	
+	image[0] = 'Images/sale-2.png';
+	image[1] = 'Images/sale-1.png';
+	image[2] = 'Images/sale-3.png';
+	function changeImage(){
+	document.slide.src = image[i];
+	if(i< image.length - 1)
+	{i++;}
+	else
+	{i = 0;}
+	setTimeout("changeImage()", time);
+	} 
+	window.onload = changeImage;
+</script>
+</head>
+<html>
+<body>
+    <div id="main">
+       	<div id="head" >
+        	<a href="login.html" target="_blank"><img src="Images/login.png" width="20px" height="15px" />&#160Đăng nhập</a>
+        	<a href=mailto:hotro@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Hỗ trợ</a>
+			<a href="" target="_parent"><img src="Images/giohang.png" width="20px" height="15px" /> &#160Giỏ hàng</a>
+			<a href="info.html" target="_parent"><img src="Images/gioithieu.png" width="20px" height="15px" /> &#160Giới thiệu</a>
+			<a href="index.html" target="_parent"><img src="Images/home.png" width="20px" height="15px" /> &#160Trang chủ</a>
+			<div id="name"> <a href="index.html">B.O.O.K Store - Best Origin Of Knowledge</a></div>
+  				<form id="sear">
+				  <input type="text" name="search" placeholder="Search...">
+				</form>
+  		</div>
+          <div id="sale">
+                <a href="sale.html"><img name="slide" width="100%" height="200px"style="margin-top:78px;" ></a>
+          </div>          
+       	<div id="nav">
+   			<div id="menu">
+				<ul>
+        		<li><a href="">Kinh tế</a></li>
+            	<li><a href="">Tâm lý</a></li>
+            	<li><a href="">Thường thức</a></li>
+            	<li><a href="">Văn học</a></li>
+            	<li><a href="">Thơ - Truyện</a></li>
+            	<li><a href="">Thể loại sách khác</a>
+					<table id="submenu">
+					<tr>
+					<td><a href="">Sách Ôn Thi THPTQG</a></td>
+					</tr>
+					<tr>
+                	<td><a href="">Sách Giáo Khoa</a></td> 
+					</tr>
+					<tr>
+                	<td><a href="">Sách Ngoại Ngữ</a>
+					</tr>
+				</table>
+					</li>
+				</ul>
+	  	  </div>
+	  </div>
+        <div id="content">
+		<div id="pic">
+			<a href=""> 
+				<img class="book" src="Images/1.jpg" title=" NHÀ GIẢ KIM (tiếng Bồ Đào Nha: O Alquimista) là một cuốn sách được xuất bản lần đầu ở Brasil năm 1988 và là cuốn sách nổi tiếng nhất của nhà văn Paulo Coelho. Nó được dịch ra 67 ngôn ngữ và bán ra tới 65 triệu bản , trở thành một trong những quyển sách bán chạy nhất mọi thời đại.Đây là một câu chuyện thúc giục độc giả theo đuổi giấc mơ của mình.">
+				<span><b>NHÀ GIẢ KIM</b></span><br> 
+				<span> $$.000 VNĐ</span>
+			</a>
+		</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/2.jpg" title="Cà Phê Cùng Tony. Có đôi khi vào những tháng năm bắt đầu vào đời, giữa vô vàn ngả rẽ và lời khuyên, khi rất nhiều dự định mà thiếu đôi phần định hướng, thì CẢM HỨNG là điều quan trọng để bạn trẻ bắt đầu bước chân đầu tiên trên con đường theo đuổi giấc mơ của mình. Cà Phê Cùng Tony là tập hợp những bài viết của tác giả Tony ... ">
+				<span><b>Cà Phê Cùng Tony</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/3.jpg" title="Có Hai Con Mèo Ngồi Bên Cửa Sổ (Tái Bản 2018). Ó HAI CON MÈO NGỒI BÊN CỬA SỔ là tác phẩm đầu tiên của nhà văn Nguyễn Nhật Ánh viết theo thể loại đồng thoại. Đặc biệt hơn nữa là viết về tình bạn của hai loài vốn là thù địch của nhau mèo và chuột. Đó là tình bạn giữa mèo Gấu và chuột Tí Hon.. Để biết tại sao mèo Gấu lại chơi ...">
+				<span><b>Có Hai Con Mèo Ngồi Bên Cửa Sổ</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/4.jpg" title="Một cuốn tiểu thuyết vốn có một kết truyện không trọn vẹn như một câu  chuyện cổ tích, một tình yêu đẹp với những điều giản đơn nhất, vẫn đẫm buồn nhưng lại nhẹ nhàng đến kì diệu, không quá bi đát đau thương. “Khi lỗi thuộc về những vì sao”  đầy nổi tiếng của John Green, đây là tác phẩm kinh điển mang đến nhiều sự đồng cảm, mang nhiều nụ cười, hy vọng và đôi chút ấm áp nhưng cũng lấy đi nhiều nước mắt, nhiều thương tổn để lại khó xoa dịu. Cùng Trên Kệ Sách tìm hiểu thêm về cuốn sách này bạn nhé!...">
+				<span><b>Khi lỗi thuộc về những vì sao</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/5.jpg" title="Cuộc sống của Jamie không thể rắc rối hơn được nữa: cô phải thành họ hàng với Angeline sau đám cưới của dì Carol và chú Devon, rồi con Stinker nhà Jamie còn lấy Stickybuns nhà Angeline và sinh ra một đống cún con, biến hai đứa thành Thông Gia Chó. Hoàn cảnh xô đẩy Jamie ngày một thân thiết hơn với “kẻ-thù-hoàn-hảo”, nhưng thế vẫn chưa trớ trêu bằng việc tự dưng Hudson Rivers, chàng trai đẹp thứ tám trong khối, lại mời Angeline và Jamie đi ăn, mà KHÔNG mời Isabella....">
+				<span><b>Nhật kí ngốc xít</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/6.jpg" title="Kẻ trộm sách – tác phẩm của nhà văn Úc Markus Zusak xuất bản năm 2005 đã làm mưa làm gió trên bảng xếp hạng những cuốn sách bán chạy nhất của The New York Times hơn 100 tuần liên tiếp, trở thành một tác phẩm kinh điển, một sự lựa chọn của hệ thống các thư viện trường học của Anh và Mỹ. Kẻ trộm sách khi mới ra đời đã lập tức gây ngạc nhiên cho những cây bút phê bình văn học trên thế giới và làm hàng triệu cặp mắt phải nhòa lệ....">
+				<span><b>Kẻ trộm sách</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/7.jpg" title="Độc giả đọc thơ, học sinh sinh viên học tập, giáo viên bình giảng, nhà nghiên cứu khảo cứu, nhà lý luận khảo luận… hầu hết đều cho rằng thơ Hàn Mạc Tử hay nhưng khó hiểu!...">	
+				<span><b>Thơ Hàn Mạc Tử</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+		<div id="pic">
+			<a href="">
+				<img class="book" src="Images/8.jpg" title="Trong cuốn Nghệ thuật chọn lựa, giáo sư đại học Columbia, Sheena Iyengar, một chuyên gia hàng đầu về chọn lựa, đặt mình vào nhiệm vụ nặng nề đó là giúp chúng ta trở thành những người chọn lựa sáng suốt hơn. Cô đã nêu ra nhiều câu hỏi đầy thú vị: Khao khát lựa chọn là bẩm sinh hay được tạo nên bởi văn hóa? Tại sao đôi khi chúng ta chọn lựa những điều ngược lại với sở thích của cá nhân? Chúng ta thực sự có bao nhiêu quyền năng đối với những chọn lựa của mình? Cuối cùng, cô đưa ra những câu trả lời bất ngờ và rất sâu sắc, từ nghiên cứu nghiêm túc, bài bản đã được trao giải thưởng của cô....">
+				<span><b>Nghệ thuật chọn lựa</b></span><br>
+				<span>$$.000 VNĐ</span>
+			</a>
+			</div>
+        <div id="pic">
+			<a href="">
+				<img class="book" src="Images/9.jpg" title="Vài năm gần đây nhiều tập tản văn, tùy bút, công trình khảo cứu mới được xuất bản cùng với những quán ăn, quán cà phê, phim ảnh…mà tên gọi có hai chữ “Sài Gòn” đã tạo thành trào lưu “hoài cổ” về nơi một thời từng là “Hòn ngọc Viễn Đông”. Những gì mà cộng đồng nhắc nhớ thật ra cũng không cổ xưa quá đâu, chỉ là Sài Gòn của gần một thế kỷ trước, đó là các công trình kiến trúc kiểu Pháp, con đường “cây xanh bóng mát”, bùng binh vòng xoay xe cộ nối nhau chảy qua đêm ngày, gánh hàng rong, quán cà phê…qua ký ức của người sống gần cả đời ở đây hay chỉ mới đến đây vài năm đều thấm đẫm tình yêu với thành phố này...">
+				<span><b>Sài Gòn bao giờ cũng thế</b></span>
+				<br>
+				<span>$$.000 VNĐ</span>
+			</a>
+        </div>
+        <div id="pic">
+                <a href="">
+                    <img class="book" src="Images/9.jpg" title="Vài năm gần đây nhiều tập tản văn, tùy bút, công trình khảo cứu mới được xuất bản cùng với những quán ăn, quán cà phê, phim ảnh…mà tên gọi có hai chữ “Sài Gòn” đã tạo thành trào lưu “hoài cổ” về nơi một thời từng là “Hòn ngọc Viễn Đông”. Những gì mà cộng đồng nhắc nhớ thật ra cũng không cổ xưa quá đâu, chỉ là Sài Gòn của gần một thế kỷ trước, đó là các công trình kiến trúc kiểu Pháp, con đường “cây xanh bóng mát”, bùng binh vòng xoay xe cộ nối nhau chảy qua đêm ngày, gánh hàng rong, quán cà phê…qua ký ức của người sống gần cả đời ở đây hay chỉ mới đến đây vài năm đều thấm đẫm tình yêu với thành phố này...">
+                    <span><b>Sài Gòn bao giờ cũng thế</b></span>
+                    <br>
+                    <span>$$.000 VNĐ</span>
+                </a>
+        </div>
+        <div id="pic">
+                <a href="">
+                    <img class="book" src="Images/9.jpg" title="Vài năm gần đây nhiều tập tản văn, tùy bút, công trình khảo cứu mới được xuất bản cùng với những quán ăn, quán cà phê, phim ảnh…mà tên gọi có hai chữ “Sài Gòn” đã tạo thành trào lưu “hoài cổ” về nơi một thời từng là “Hòn ngọc Viễn Đông”. Những gì mà cộng đồng nhắc nhớ thật ra cũng không cổ xưa quá đâu, chỉ là Sài Gòn của gần một thế kỷ trước, đó là các công trình kiến trúc kiểu Pháp, con đường “cây xanh bóng mát”, bùng binh vòng xoay xe cộ nối nhau chảy qua đêm ngày, gánh hàng rong, quán cà phê…qua ký ức của người sống gần cả đời ở đây hay chỉ mới đến đây vài năm đều thấm đẫm tình yêu với thành phố này...">
+                    <span><b>Sài Gòn bao giờ cũng thế</b></span>
+                    <br>
+                    <span>$$.000 VNĐ</span>
+                </a>
+        </div>
+        <div id="pic">
+                <a href="">
+                    <img class="book" src="Images/9.jpg" title="Vài năm gần đây nhiều tập tản văn, tùy bút, công trình khảo cứu mới được xuất bản cùng với những quán ăn, quán cà phê, phim ảnh…mà tên gọi có hai chữ “Sài Gòn” đã tạo thành trào lưu “hoài cổ” về nơi một thời từng là “Hòn ngọc Viễn Đông”. Những gì mà cộng đồng nhắc nhớ thật ra cũng không cổ xưa quá đâu, chỉ là Sài Gòn của gần một thế kỷ trước, đó là các công trình kiến trúc kiểu Pháp, con đường “cây xanh bóng mát”, bùng binh vòng xoay xe cộ nối nhau chảy qua đêm ngày, gánh hàng rong, quán cà phê…qua ký ức của người sống gần cả đời ở đây hay chỉ mới đến đây vài năm đều thấm đẫm tình yêu với thành phố này...">
+                    <span><b>Sài Gòn bao giờ cũng thế</b></span>
+                    <br>
+                    <span>$$.000 VNĐ</span>
+                </a>
+        </div>
+        </div>
+		<div id="footer">
+<span> Bản quyền thuộc :&#160&#160&#160&#160&#160</span>
+
+<a href=mailto:1851010013bao@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Nguyễn Nguyệt Phương Bảo</a>
+
+<a href=mailto:1851010139trang@ou.edu.vn><img src="Images/hotro.png" width="20px" height="15px"/> &#160Đoàn Thiên Trang</a>
+</div>
+
+</div>
+</body>
+</html>
